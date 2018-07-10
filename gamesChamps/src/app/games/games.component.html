@@ -1,0 +1,17 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Game name</th>
+        <th>Game Registration fee</th>
+        <th>Last Date of Registration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let game of games">
+        <td>{{ game.name }}</td>
+        <td>{{ game.fee | currency:'USD' }}</td>
+        <td>{{ game.lastDate | date:'medium' }}</td>
+      </tr>
+    </tbody>
+</table>
