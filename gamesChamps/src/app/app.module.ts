@@ -10,7 +10,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { GamesComponent } from './games/games.component';
 import { PlayersComponent } from './players/players.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HttpClientModule } from '@angular/common/http';  // <-Add here
+import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';  // <-Add here
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';  // <-Add here
     FooterComponent,
     GamesComponent,
     PlayersComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>{{title}}</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<div class="container-fluid">
-		<div id="header"><app-header></app-header></div>
-		<div id="sidebar-left">	<app-sidebar></app-sidebar></div>
-		<div id="main">	<router-outlet></router-outlet></div>
-		<div id="footer"><app-footer></app-footer></div>
+<nav class="navbar navbar-inverse">
+<app-header></app-header>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Games Area</h4>
+		<app-sidebar></app-sidebar>
+    </div>
+
+    <div class="col-sm-9">
+		<router-outlet></router-outlet>
 	</div>
-</body>
-</html>
+</div>
+<footer class="container-fluid">
+<app-footer></app-footer>
+</footer>
+
